@@ -1,0 +1,18 @@
+[package]
+name = "grub-theme-fit"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.70"
+description = "Make a GRUB theme fit your screen: converts pixel layouts to your resolution, automatically or by choosing from a list of known sizes"
+license = "MIT"
+repository = "https://github.com/mryujruu/grub-theme-fit"
+readme = "README.md"
+keywords = ["grub", "theme", "bootloader", "resolution", "linux"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+
+[profile.release]
+opt-level = 3
+lto = true
+strip = true
